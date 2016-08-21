@@ -18,7 +18,7 @@
     <!-- Page Description and Author -->
     <meta name="description" content="ConBiz - Responsive HTML5 Template">
     <meta name="author" content="Grayrids">
-    
+
     <!-- Bootstrap CSS  -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="screen">
     <!-- Font Awesome CSS -->
@@ -48,6 +48,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/colors/river.css" title="river" media="screen" />
     <link rel="stylesheet" type="text/css" href="assets/css/colors/wisteria.css" title="wisteria" media="screen" />
     <link rel="stylesheet" type="text/css" href="assets/css/colors/alizarin.css" title="alizarin" media="screen" />
+
+    <script type="text/javascript" src="assets/js/jquery-min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 
     <!--[if IE 8]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -79,39 +82,39 @@
                     <a href="#">
                     <i class="icon-call-out">
                     </i>
-                    โทรศัพท์: (+66) 02-987-2128
+                    โทรศัพท์: 02-987-2128
                     </a>
                   </li>  
                   <li>
                     <a href="#">
                     <i class="icon-clock">
                     </i>
-                    จ.-ศ. <span class="timing">(9.00 น.- 17.00 น.)</span>
+                    จ.-ศ. <span class="timing">(08.30 น.- 17.30 น.)</span>
                     </a>
                   </li>                
                 </ul>
                 <!-- End Contact Info -->
               </div>
               <div class="col-md-5 col-sm-3">
-                <!-- Start Social Links -->
-                <ul class="social-list">
-                  <li>
-                    <a href="http://www.facebook.com/teepoppgroup/" class="social-link facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-link twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-link google" data-toggle="tooltip" data-placement="bottom" title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-link dribbble" data-toggle="tooltip" data-placement="bottom" title="Dribble" href="#"><i class="fa fa-dribbble"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/company/teepopp-group-co-ltd" class="social-link linkdin" data-toggle="tooltip" data-placement="bottom" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                </ul>
-                <!-- End Social Links -->
+                <!--&lt;!&ndash; Start Social Links &ndash;&gt;-->
+                <!--<ul class="social-list">-->
+                  <!--<li>-->
+                    <!--<a href="http://www.facebook.com/teepoppgroup/" class="social-link facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                    <!--<a href="#" class="social-link twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter" href="#"><i class="fa fa-twitter"></i></a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                    <!--<a href="#" class="social-link google" data-toggle="tooltip" data-placement="bottom" title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                    <!--<a href="#" class="social-link dribbble" data-toggle="tooltip" data-placement="bottom" title="Dribble" href="#"><i class="fa fa-dribbble"></i></a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                    <!--<a href="https://www.linkedin.com/company/teepopp-group-co-ltd" class="social-link linkdin" data-toggle="tooltip" data-placement="bottom" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>-->
+                  <!--</li>-->
+                <!--</ul>-->
+                <!--&lt;!&ndash; End Social Links &ndash;&gt;-->
               </div>
             </div>
           </div>
@@ -133,7 +136,7 @@
               <!-- End Toggle Nav Link For Mobiles -->
               <div class="logo-wrapper">
                 <a class="navbar-brand" style="width:320px;" href="index.html">
-                  <img src="assets/img/logo.png" alt="ConBiz">
+                  <img src="assets/img/logo.png" alt="Teepopp">
                 </a>  
               </div>
             </div>
@@ -168,6 +171,8 @@
                 </li>
                 <li><a href="services.html">บริการ</a>
                 </li>
+                <li><a href="CustomersGroup.html">กลุ่มลูกค้า</a>
+                </li>
                 <li><a href="contact.html">การติดต่อ</a>
                 </li>
               </ul>
@@ -182,6 +187,8 @@
             <li><a href="about.html">เกี่ยวกับบริษัท</a>
             </li>
             <li><a href="services.html">บริการ</a>
+            </li>
+            <li><a href="CustomersGroup.html">กลุ่มลูกค้า</a>
             </li>
             <li><a href="contact.html">การติดต่อ</a>
             </li>
@@ -211,24 +218,42 @@
       <!--<div id="content" class="site-content">-->
         <div class="conbiz-content full-screen-layout">
           <div class="conbiz-row">
-
-            <div class="vc_row wpb_row vc_row-fluid wt_vc_row_626 vc_row-no-padding wt_row_stretch_row_content_no_paddings"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">				<div id="carousel-area">
-              <div id="carousel-slider-61" class="carousel slide wt_main_slider" data-interval="4000">
+            <div class="vc_row wpb_row vc_row-fluid wt_vc_row_573 vc_row-no-padding wt_row_stretch_row_content_no_paddings"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">				<div id="carousel-area">
+              <div id="carousel-slider-29" class="carousel slide wt_main_slider" data-interval="3000">
 
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                  <li data-target="#carousel-slider-61" data-slide-to="0" class="active" ></li><li data-target="#carousel-slider-61" data-slide-to="1"  ></li><li data-target="#carousel-slider-61" data-slide-to="2"  ></li>				</ol>
+                  <li data-target="#carousel-slider-29" data-slide-to="0" class="active" ></li>
+                  <li data-target="#carousel-slider-29" data-slide-to="1"  ></li>
+                  <li data-target="#carousel-slider-29" data-slide-to="2"  ></li>
+                  <li data-target="#carousel-slider-29" data-slide-to="3"  ></li>
+                  <li data-target="#carousel-slider-29" data-slide-to="4"  ></li>
+                  <li data-target="#carousel-slider-29" data-slide-to="5"  ></li>
+                  <li data-target="#carousel-slider-29" data-slide-to="6"  ></li>
+                </ol>
 
                 <div class="carousel-inner">
 
-
                   <div class="item active">
-                    <img width="1902" height="560" src="assets/img/home/h-001.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
-                    <h2>การทำความสะอาดแบบครบวงจร</h2>
-                    <h3>สามารถทำความสะอาดทั้งภายใน หรือภายนอกอาคาร แม้แต่พื้นที่ที่มีความเสี่ยงสูง</h3>
-                    <a class="btn btn-lg btn-effect" href="services.html"  target="_blank"><i class="fa fa-arrow-circle-o-right"></i>Learn More</a>						</div>
+                  <img width="1902" height="560" src="assets/img/home/h-001.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
+                  <h2>การทำความสะอาดแบบครบวงจร</h2>
+                  <h3>สามารถทำความสะอาดทั้งภายใน หรือภายนอกอาคาร แม้แต่พื้นที่ที่มีความเสี่ยงสูง</h3>
+                  <a class="btn btn-lg btn-effect" href="services.html"  target="_blank"><i class="fa fa-arrow-circle-o-right"></i>Learn More</a>						</div>
                   </div>
 
+                  <div class="item ">
+                  <img width="1902" height="560" src="assets/img/home/h-002.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
+                  <h2>การให้บริการทำความสะอาดแบบมืออาชีพ</h2>
+                  <h3>การบริการ บุคลากร อุปกรณ์ เครื่องมือที่ครบครัน และทันสมัย</h3>
+                  <a class="btn btn-lg btn-border" href="services.html"  target="_blank"><i class="fa fa-coffee"></i>Learn More</a></div>
+                  </div>
+
+                  <div class="item ">
+                  <img width="1902" height="560" src="assets/img/home/h-003.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
+                  <h2>การให้บริการทำความสะอาด ด้วยบุคลากรระดับมืออาชีพ</h2>
+                  <h3>ความพร้อม การบริการ ทำความสะอาด ด้วยบุคลากรระดับมืออาชีพ และอุปกรณ์ทำความสะอาดที่ทันสมัย</h3>
+                  <a class="btn btn-lg btn-border" href="services.html"  target="_blank"><i class="fa fa-coffee"></i>Learn More</a></div>
+                  </div>
 
                   <div class="item ">
                     <img width="1902" height="560" src="assets/img/home/h-002.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
@@ -237,6 +262,19 @@
                     <a class="btn btn-lg btn-border" href="services.html"  target="_blank"><i class="fa fa-coffee"></i>Learn More</a></div>
                   </div>
 
+                  <div class="item ">
+                    <img width="1902" height="560" src="assets/img/home/h-003.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
+                    <h2>การให้บริการทำความสะอาด ด้วยบุคลากรระดับมืออาชีพ</h2>
+                    <h3>ความพร้อม การบริการ ทำความสะอาด ด้วยบุคลากรระดับมืออาชีพ และอุปกรณ์ทำความสะอาดที่ทันสมัย</h3>
+                    <a class="btn btn-lg btn-border" href="services.html"  target="_blank"><i class="fa fa-coffee"></i>Learn More</a></div>
+                  </div>
+
+                  <div class="item ">
+                    <img width="1902" height="560" src="assets/img/home/h-002.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
+                    <h2>การให้บริการทำความสะอาดแบบมืออาชีพ</h2>
+                    <h3>การบริการ บุคลากร อุปกรณ์ เครื่องมือที่ครบครัน และทันสมัย</h3>
+                    <a class="btn btn-lg btn-border" href="services.html"  target="_blank"><i class="fa fa-coffee"></i>Learn More</a></div>
+                  </div>
 
                   <div class="item ">
                     <img width="1902" height="560" src="assets/img/home/h-003.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
@@ -246,26 +284,20 @@
                   </div>
 
 
-                </div><!-- Carousel Item Ends -->
+                  </div><!-- Carousel Item Ends -->
 
-
-                <a class="left carousel-control" href="#carousel-slider-61" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                <a class="right carousel-control" href="#carousel-slider-61" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                <a class="left carousel-control" href="#carousel-slider-29" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                <a class="right carousel-control" href="#carousel-slider-29" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a>
 
               </div>
             </div>
-            </div>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
               <script>
                 jQuery(function($){
                   $('.wt_main_slider').carousel();
                 });
               </script>
-
+            </div></div></div></div>
+          </div></div>
 
       <!-- Start Boxed Section -->
       <div class="boxed">
@@ -425,132 +457,6 @@
       </section>
       <!-- End Portfolio Section -->
 
-      <!-- Start Team Member Section -->
-      <div class="team section">
-        <div class="container">
-          <!-- Start Heading -->
-          <div class="heading">
-            <div class="section-title">ทีม &<span> สมาชิก</span></div>
-          </div>
-          <!-- End Heading -->
-          <!-- Some Text -->
-          <p class="description text-center">
-            ทรัพยากรทางด้านบุคคล เป็นหัวใจสำคัญของการให้บริการ ซึ่งบริฐัทฯ ตระหนักดีถึงข้อนี้  <br> จึงได้จัดสรรและคัดเลือกบุคลากรในแต่ละส่วรแต่ละงานหน้าที่ความรับผิดชอบให้ตรงตามบุคคลิก และประสบการณ์ของแต่ละบุคคล
-          </p>
-          <div class="row">
-            <!-- Start Memebr 1 -->
-            <div class="col-md-3 col-sm-6">
-              <div class="team-member">
-                <div class="team-thumbnail">
-                  <img src="assets/img/team/team-01.jpg" alt="">
-                  <div class="overlay">
-                    <p class="text">หน้าที่</p>
-                    <div class="info name">
-                      <p>หัวหน้าผู้ประสานงานชาย</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="info">
-                  <h4>Unifrom</h4>
-                  <p>หัวหน้าผู้ประสานงานชาย</p>
-                </div>
-              </div>
-            </div>
-            <!-- Start Memebr 2 -->
-            <div class="col-md-3 col-sm-6">
-              <div class="team-member">
-                <div class="team-thumbnail">
-                  <img src="assets/img/team/team-02.jpg" alt="">
-                  <div class="overlay">
-                    <p class="text">หน้าที่</p>
-                    <div class="info name">
-                      <p>หัวหน้าผู้ประสานงานหญิง</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="info">
-                  <h4>Unifrom</h4>
-                  <p>หัวหน้าผู้ประสานงานหญิง</p>
-                </div>
-              </div>
-            </div>
-            <!-- Start Memebr 3 -->
-            <div class="col-md-3 col-sm-6">
-              <div class="team-member">
-                <div class="team-thumbnail">
-                  <img src="assets/img/team/team-03.jpg" alt="">
-                  <div class="overlay">
-                    <p class="text">หน้าที่</p>
-                    <div class="info name">
-                      <p>หัวหน้าพนักงานทำความสะอาดชาย</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="info">
-                  <h4>Unifrom</h4>
-                  <p>หัวหน้าพนักงานทำความสะอาดชาย</p>
-                </div>
-              </div>
-            </div>
-            <!-- Start Memebr 4 -->
-            <div class="col-md-3 col-sm-6">
-              <div class="team-member">
-                <div class="team-thumbnail">
-                  <img src="assets/img/team/team-04.jpg" alt="">
-                  <div class="overlay">
-                    <p class="text">หน้าที่</p>
-                    <div class="info name">
-                      <p>หัวหน้าพนักงานทำความสะอาดหญิง</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="info">
-                  <h4>Unifrom</h4>
-                  <p>หัวหน้าพนักงานทำความสะอาดหญิง</p>
-                </div>
-              </div>
-            </div>
-            <!-- Start Memebr 5 -->
-            <div class="col-md-3 col-sm-6">
-              <div class="team-member">
-                <div class="team-thumbnail">
-                  <img src="assets/img/team/team-05.jpg" alt="">
-                  <div class="overlay">
-                    <p class="text">หน้าที่</p>
-                    <div class="info name">
-                      <p>พนักงานทำความสะอาดชาย</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="info">
-                  <h4>Unifrom</h4>
-                  <p>พนักงานทำความสะอาดชาย</p>
-                </div>
-              </div>
-            </div>
-            <!-- Start Memebr 6 -->
-            <div class="col-md-3 col-sm-6">
-              <div class="team-member">
-                <div class="team-thumbnail">
-                  <img src="assets/img/team/team-06.jpg" alt="">
-                  <div class="overlay">
-                    <p class="text">หน้าที่</p>
-                    <div class="info name">
-                      <p>พนักงานทำความสะอาดหญิง</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="info">
-                  <h4>Unifrom</h4>
-                  <p>พนักงานทำความสะอาดหญิง</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Memebr  -->
-          </div>
-        </div>
-      </div>
-      <!-- Start Team Member Section -->
 
       <!--&lt;!&ndash; Start Project Section &ndash;&gt;-->
       <!--<div class="project section">-->
@@ -666,37 +572,39 @@
       <!--</div>-->
       <!--&lt;!&ndash; End Project Section  &ndash;&gt;-->
 
-      <!-- Testimonial Section Start -->
-      <section id="testimonial" class="section">
-        <div class="container">
-          <div class="row">
-            <div id="testimonial-carousel" class="owl-carousel owl-theme">
-              <div class="item active text-center">
-                <img class="img-member" src="assets/img/testimonial/img1.jpg" alt=""> 
-                <div class="client-info">
-                  <h2 class="client-name">ชื่อ สกุล<span>(ตำแหน่ง)</span></h2>
-                </div>
-                <p><i class="fa fa-quote-left quote-left"></i>สุนทรพจน์ <i class="fa fa-quote-right quote-right"></i><br> ............. <br> ............ </p>
-              </div>
-              <div class="item text-center">
-                <img class="img-member" src="assets/img/testimonial/img2.jpg" alt=""> 
-                <div class="client-info">
-                 <h2 class="client-name">ชื่อ สกุล<span>(ตำแหน่ง)</span></h2>
-                </div>
-                <p><i class="fa fa-quote-left quote-left"></i>สุนทรพจน์<i class="fa fa-quote-right quote-right"></i><br> ................<br> ............ </p>
-              </div>
-              <div class="item text-center">
-                <img class="img-member" src="assets/img/testimonial/img3.jpg" alt=""> 
-                <div class="client-info">
-                  <h2 class="client-name">ชื่อ สกุล<span>(ตำแหน่ง)</span></h2>
-                </div>
-                <p><i class="fa fa-quote-left quote-left"></i>................ <i class="fa fa-quote-right quote-right"></i><br>.................... <br> ................ </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Testimonial Section End -->
+      <a href="assets/pdf/profile.pdf" target="_blank">----------------------------</a>
+
+      <!--&lt;!&ndash; Testimonial Section Start &ndash;&gt;-->
+      <!--<section id="testimonial" class="section">-->
+        <!--<div class="container">-->
+          <!--<div class="row">-->
+            <!--<div id="testimonial-carousel" class="owl-carousel owl-theme">-->
+              <!--<div class="item active text-center">-->
+                <!--<img class="img-member" src="assets/img/testimonial/img1.jpg" alt="">-->
+                <!--<div class="client-info">-->
+                  <!--<h2 class="client-name">ชื่อ สกุล<span>(ตำแหน่ง)</span></h2>-->
+                <!--</div>-->
+                <!--<p><i class="fa fa-quote-left quote-left"></i>สุนทรพจน์ <i class="fa fa-quote-right quote-right"></i><br> ............. <br> ............ </p>-->
+              <!--</div>-->
+              <!--<div class="item text-center">-->
+                <!--<img class="img-member" src="assets/img/testimonial/img2.jpg" alt="">-->
+                <!--<div class="client-info">-->
+                 <!--<h2 class="client-name">ชื่อ สกุล<span>(ตำแหน่ง)</span></h2>-->
+                <!--</div>-->
+                <!--<p><i class="fa fa-quote-left quote-left"></i>สุนทรพจน์<i class="fa fa-quote-right quote-right"></i><br> ................<br> ............ </p>-->
+              <!--</div>-->
+              <!--<div class="item text-center">-->
+                <!--<img class="img-member" src="assets/img/testimonial/img3.jpg" alt="">-->
+                <!--<div class="client-info">-->
+                  <!--<h2 class="client-name">ชื่อ สกุล<span>(ตำแหน่ง)</span></h2>-->
+                <!--</div>-->
+                <!--<p><i class="fa fa-quote-left quote-left"></i>................ <i class="fa fa-quote-right quote-right"></i><br>.................... <br> ................ </p>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</section>-->
+      <!--&lt;!&ndash; Testimonial Section End &ndash;&gt;-->
 
       <!-- Start Footer Section -->
       <footer>
@@ -708,59 +616,78 @@
                 <h4>
                   <img src="assets/img/footer-logo.png" class="img-responsive" alt="Footer Logo" />
                 </h4>
-                <p>
+                <p style="margin-top: -15px;">
                   เราจะมุ่งมั่นการบริการที่มีคุณภาพ ด้วยการพัฒนาการบริการอย่างต่อเนื่องและเป็นที่ยอมรับในระดับสากล
                 </p>
+                <h4>
+                  <img src="assets/img/ISO9001.jpg" class="img-responsive" alt="Footer Logo" />
+                </h4>
               </div>
             </div>
             <!-- End Contact Widget -->
 
-            <!-- Start latest Work Posts Widget -->
+            <!-- Start Contact Widget -->
             <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="footer-widget flickr-widget">
-                <h4>
-                  ผลงานล่าสุด
+              <div class="footer-widget">
+                <h4 style="top: 20px;">
+                  รับสมัครงาน
                 </h4>
-                <ul class="flickr-list">
-                  <li>
-                    <a href="assets/img/work/img-1.jpg" class="lightbox">
-                      <img alt="" src="assets/img/work/img-1.jpg">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="assets/img/work/img-2.jpg" class="lightbox">
-                      <img alt="" src="assets/img/work/img-2.jpg">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="assets/img/work/img-3.jpg" class="lightbox">
-                      <img alt="" src="assets/img/work/img-3.jpg">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="assets/img/work/img-4.jpg" class="lightbox">
-                      <img alt="" src="assets/img/work/img-4.jpg">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="assets/img/work/img-5.jpg" class="lightbox">
-                      <img alt="" src="assets/img/work/img-5.jpg">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="assets/img/work/img-6.jpg" class="lightbox">
-                      <img alt="" src="assets/img/work/img-6.jpg">
-                    </a>
-                  </li>
-                </ul>
+                <p>
+                  ผู้ที่สนใจร่วมงานกับเรา สามารถติดต่อเราได้โดยคลิ๊กปุ่ม "สมัครงาน" ด่านล่างนี้
+                </p>
+                <div class="compayt-button">
+                  <a href="applicationform.html" class="btn btn-effect" style="margin-top: 20px;">สมัครงาน <i class="icon-user"></i></a>
+                </div>
               </div>
             </div>
-            <!-- End latest Work  Widget -->
+            <!-- End Contact Widget -->
+
+            <!--&lt;!&ndash; Start latest Work Posts Widget &ndash;&gt;-->
+            <!--<div class="col-md-3 col-sm-6 col-xs-12">-->
+              <!--<div class="footer-widget flickr-widget">-->
+                <!--<h4>-->
+                  <!--รับสมัครงาน-->
+                <!--</h4>-->
+                <!--<ul class="flickr-list">-->
+                  <!--<li>-->
+                    <!--<a href="assets/img/work/img-1.jpg" class="lightbox">-->
+                      <!--<img alt="" src="assets/img/work/img-1.jpg">-->
+                    <!--</a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                    <!--<a href="assets/img/work/img-2.jpg" class="lightbox">-->
+                      <!--<img alt="" src="assets/img/work/img-2.jpg">-->
+                    <!--</a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                    <!--<a href="assets/img/work/img-3.jpg" class="lightbox">-->
+                      <!--<img alt="" src="assets/img/work/img-3.jpg">-->
+                    <!--</a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                    <!--<a href="assets/img/work/img-4.jpg" class="lightbox">-->
+                      <!--<img alt="" src="assets/img/work/img-4.jpg">-->
+                    <!--</a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                    <!--<a href="assets/img/work/img-5.jpg" class="lightbox">-->
+                      <!--<img alt="" src="assets/img/work/img-5.jpg">-->
+                    <!--</a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                    <!--<a href="assets/img/work/img-6.jpg" class="lightbox">-->
+                      <!--<img alt="" src="assets/img/work/img-6.jpg">-->
+                    <!--</a>-->
+                  <!--</li>-->
+                <!--</ul>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; End latest Work  Widget &ndash;&gt;-->
 
             <!-- Start Address Widget -->
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="footer-widget">
-                <h4>
+                <h4 style="top: 20px;">
                   บริษัท ธีภพ กรุ๊ป จำกัด
                 </h4>
                 <ul class="address">
@@ -768,14 +695,24 @@
                     <a href="#"><i class="fa fa-map-marker"></i> 32/2 หมู่ 3 ตำบล คูคต อำเภอ ลำลูกกา จังหวัด ปทุมธานี 12130</a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-phone"></i> (+66)02-987-2128</a>
+                    <a href="#"><i class="fa fa-phone"></i> 02-987-2128</a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-envelope"></i> tp@teepopp.co.th</a>
+                    <a href="#"><i class="fa fa-mobile"></i> (+66) 087-022-9222</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-comments-o"></i> (Line) @tp.clening</a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/teepoppgroup/" target="_blank"><i class="fa fa-facebook-square"></i> facebook.com/teepoppgroup</a>
                   </li>
                   <li>
                     <a href="#"><i class="fa fa-fax"></i> FAX: 02-987-2129</a>
                   </li>
+                  <li>
+                    <a href="#"><i class="fa fa-envelope"></i> tp@teepopp.co.th</a>
+                  </li>
+
                 </ul>
               </div>
             </div>
@@ -784,15 +721,14 @@
             <!-- Start Text Widget -->
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="footer-widget hours-widget">
-                <h4>
-                  ชั่วโมงทำงาน
+                <h4 style="top: 20px;">
+                  เวลาทำการ
                 </h4>
                 <div class="contact-info">
                   <!--<p>เราพร้อมที่จะช่วยคุณตลอด 24 ชั่วโมงต่อวันเจ็ดวันต่อสัปดาห์</p>-->
                   <ul class="hours">
-                    <li>จันทร์-ศุกร์: <span>9.00 น. -  17.00 น.</span></li>
-                    <li>เสาร์-อาทิตย์: <span> - </span></li>
-                    <!--<li>Sunday: <span>Closed</span></li>-->
+                    <li>จันทร์-เสาร์: <span>8.30 น. -  17.30 น.</span></li>
+                    <li>อาทิตย์: <span> หยุด </span></li>
                   </ul>
                 </div>
               </div>
@@ -813,7 +749,7 @@
               <p>
                 Copyright © TEEPOPP.CO.TH 2016 Designed & Developed by
                 <a href="https://www.facebook.com/kob.oiu.oig">TanaphatDEV</a>
-                Free code © 2016
+                DevTH © 2016
               </p>
             </div>
           </div>
@@ -837,6 +773,7 @@
     </div>
 
     <!-- Main JS  -->
+
     <script type="text/javascript" src="assets/js/jquery-min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>

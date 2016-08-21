@@ -1048,7 +1048,7 @@ input[type="submit"] {
   overflow: hidden;
 }
 .company-ever .content {
-  background: #202E31;
+  background: #202e31 none repeat scroll 0 0;
   color: #fff;
   float: right;
   padding: 40px;
@@ -1073,10 +1073,10 @@ input[type="submit"] {
 .company-ever .content:before {
   position: absolute;
   content: "";
-  top: -16px;
-  left: -23px;
-  width: 50px;
-  height: 107%;
+  top: -10px;
+  left: -30px;
+  width: 56px;
+  height: 109%;
   background: #FAFAFA none repeat scroll 0% 0%;
   transform: rotate(370deg);
 }
