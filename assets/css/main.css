@@ -1071,14 +1071,14 @@ input[type="submit"] {
   float: right;
 }
 .company-ever .content:before {
-  position: absolute;
-  content: "";
-  top: -10px;
-  left: -30px;
-  width: 56px;
-  height: 109%;
-  background: #FAFAFA none repeat scroll 0% 0%;
-  transform: rotate(370deg);
+  /*position: absolute;*/
+  /*content: "";*/
+  /*top: -10px;*/
+  /*left: -30px;*/
+  /*width: 56px;*/
+  /*height: 109%;*/
+  /*background: #FAFAFA none repeat scroll 0% 0%;*/
+  /*transform: rotate(370deg);*/
 }
 #portfolio {
   padding-top: 80px;

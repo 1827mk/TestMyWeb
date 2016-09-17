@@ -7,6 +7,38 @@
 <![endif]-->
 <html lang="en">
   <head>
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
+    <style type="text/css">
+
+      body
+      {
+        background:#fff;
+      }
+      .kobHover
+      {
+        width:auto;
+        /*box-shadow:0px 0px 20px #cecece;*/
+        -moz-transform: scale(0.7);
+        -moz-transition-duration: 0.6s;
+        -webkit-transition-duration: 0.6s;
+        -webkit-transform: scale(0.7);
+
+        -ms-transform: scale(0.7);
+        -ms-transition-duration: 0.6s;
+      }
+      .kobHover:hover
+      {
+        /*box-shadow: 20px 20px 20px #dcdcdc;*/
+        -moz-transform: scale(0.8);
+        -moz-transition-duration: 0.6s;
+        -webkit-transition-duration: 0.6s;
+        -webkit-transform: scale(0.8);
+
+        -ms-transform: scale(0.8);
+        -ms-transition-duration: 0.6s;
+
+      }
+    </style>
     <!-- Basic -->
     <title>
       Teepopp | บริษัท ธีภพ กรุ๊ป จำกัด
@@ -50,7 +82,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/colors/alizarin.css" title="alizarin" media="screen" />
 
     <script type="text/javascript" src="assets/js/jquery-min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>-->
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+    <!--&lt;!&ndash;<script type="text/javascript" src="assets/slide/jquery-3.1.0.min.js"></script>&ndash;&gt;-->
+    <script type="text/javascript" src="assets/slide/js/directorySlider.js"></script>
+
 
     <!--[if IE 8]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -58,8 +95,34 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
   </head>
   <body>
+  <script type="text/javascript" language="javascript">
+
+    $(document).ready(function(){
+
+          $('.directorySliderLeft').directorySlider({
+            animation: 'fade',
+            directory: 'assets/slide/imgL/',
+            extension: 'jpg',
+            numslides: 5,
+            speed: 3000,
+            height: 600,
+            width: 450
+          });
+
+          $('.directorySliderRight').directorySlider({
+            animation: 'fade',
+            directory: 'assets/slide/imgR/',
+            extension: 'jpg',
+            numslides: 5,
+            speed: 3000,
+            height: 600,
+            width: 450
+          });
+    });
+  </script>
     <!-- Full Body Container -->
     <div id="container">
       <!-- Start Header Section -->
@@ -136,7 +199,7 @@
               <!-- End Toggle Nav Link For Mobiles -->
               <div class="logo-wrapper">
                 <a class="navbar-brand" style="width:320px;" href="index.html">
-                  <img src="assets/img/logo.png" alt="Teepopp">
+                  <img class="kobHover" src="assets/img/logo.png" alt="Teepopp">
                 </a>  
               </div>
             </div>
@@ -201,20 +264,6 @@
       </header>
       <!-- End Header Section -->
 
-       <!--Start Content Section -->
-      <!--<section id="content" class="error-bg">-->
-        <!--<div class="container">-->
-          <!--<div class="row">-->
-              <!--<div class="error-page">-->
-                <!--<h3><a href="#">Project By Tanaphat DEV</a></h3>-->
-                <!--<a href="#" class="btn btn-larg btn-effect">Purchase Now</a>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</section>-->
-      <!-- End Content Section  -->
-
-
       <!--<div id="content" class="site-content">-->
         <div class="conbiz-content full-screen-layout">
           <div class="conbiz-row">
@@ -235,49 +284,49 @@
                 <div class="carousel-inner">
 
                   <div class="item active">
-                  <img width="1902" height="560" src="assets/img/home/h-001.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
+                  <img width="1902" height="560" src="assets/img/home/h-001.JPG" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
                   <h2>การทำความสะอาดแบบครบวงจร</h2>
                   <h3>สามารถทำความสะอาดทั้งภายใน หรือภายนอกอาคาร แม้แต่พื้นที่ที่มีความเสี่ยงสูง</h3>
                   <a class="btn btn-lg btn-effect" href="services.html"  target="_blank"><i class="fa fa-arrow-circle-o-right"></i>Learn More</a>						</div>
                   </div>
 
                   <div class="item ">
-                  <img width="1902" height="560" src="assets/img/home/h-002.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
+                  <img width="1902" height="560" src="assets/img/home/h-002.JPG" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
                   <h2>การให้บริการทำความสะอาดแบบมืออาชีพ</h2>
                   <h3>การบริการ บุคลากร อุปกรณ์ เครื่องมือที่ครบครัน และทันสมัย</h3>
                   <a class="btn btn-lg btn-border" href="services.html"  target="_blank"><i class="fa fa-coffee"></i>Learn More</a></div>
                   </div>
 
                   <div class="item ">
-                  <img width="1902" height="560" src="assets/img/home/h-003.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
+                  <img width="1902" height="560" src="assets/img/home/h-003.JPG" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
                   <h2>การให้บริการทำความสะอาด ด้วยบุคลากรระดับมืออาชีพ</h2>
                   <h3>ความพร้อม การบริการ ทำความสะอาด ด้วยบุคลากรระดับมืออาชีพ และอุปกรณ์ทำความสะอาดที่ทันสมัย</h3>
                   <a class="btn btn-lg btn-border" href="services.html"  target="_blank"><i class="fa fa-coffee"></i>Learn More</a></div>
                   </div>
 
                   <div class="item ">
-                    <img width="1902" height="560" src="assets/img/home/h-002.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
+                    <img width="1902" height="560" src="assets/img/home/h-004.JPG" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
                     <h2>การให้บริการทำความสะอาดแบบมืออาชีพ</h2>
                     <h3>การบริการ บุคลากร อุปกรณ์ เครื่องมือที่ครบครัน และทันสมัย</h3>
                     <a class="btn btn-lg btn-border" href="services.html"  target="_blank"><i class="fa fa-coffee"></i>Learn More</a></div>
                   </div>
 
                   <div class="item ">
-                    <img width="1902" height="560" src="assets/img/home/h-003.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
+                    <img width="1902" height="560" src="assets/img/home/h-005.JPG" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
                     <h2>การให้บริการทำความสะอาด ด้วยบุคลากรระดับมืออาชีพ</h2>
                     <h3>ความพร้อม การบริการ ทำความสะอาด ด้วยบุคลากรระดับมืออาชีพ และอุปกรณ์ทำความสะอาดที่ทันสมัย</h3>
                     <a class="btn btn-lg btn-border" href="services.html"  target="_blank"><i class="fa fa-coffee"></i>Learn More</a></div>
                   </div>
 
                   <div class="item ">
-                    <img width="1902" height="560" src="assets/img/home/h-002.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
+                    <img width="1902" height="560" src="assets/img/home/h-006.JPG" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
                     <h2>การให้บริการทำความสะอาดแบบมืออาชีพ</h2>
                     <h3>การบริการ บุคลากร อุปกรณ์ เครื่องมือที่ครบครัน และทันสมัย</h3>
                     <a class="btn btn-lg btn-border" href="services.html"  target="_blank"><i class="fa fa-coffee"></i>Learn More</a></div>
                   </div>
 
                   <div class="item ">
-                    <img width="1902" height="560" src="assets/img/home/h-003.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
+                    <img width="1902" height="560" src="assets/img/home/h-007.JPG" class="attachment-slider-img size-slider-img wp-post-image" alt="" /><div class="carousel-caption">
                     <h2>การให้บริการทำความสะอาด ด้วยบุคลากรระดับมืออาชีพ</h2>
                     <h3>ความพร้อม การบริการ ทำความสะอาด ด้วยบุคลากรระดับมืออาชีพ และอุปกรณ์ทำความสะอาดที่ทันสมัย</h3>
                     <a class="btn btn-lg btn-border" href="services.html"  target="_blank"><i class="fa fa-coffee"></i>Learn More</a></div>
@@ -321,7 +370,7 @@
           <div class="row company-bg">
             <div class="col-md-6">
               <div class="company-thumb">
-                <img src="assets/img/featured/img-1.jpg" alt="">
+                <img src="assets/img/featured/img-1.JPG" alt="featured"  >
               </div>
             </div>
             <div class="col-md-6">
@@ -359,6 +408,7 @@
              <!--End Portfolio Controls -->
           </div>
         </div>
+
         <!-- Portfolio Recent Projects -->
         <div id="portfolio-list">
           <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 mix buildings interior">
@@ -367,7 +417,7 @@
               <div class="overlay">
                 <div class="icon">
                   <!--<a href="single-project.html"><i class="icon-pointer left"></i></a>-->
-                  <a href="assets/img/portfolio/TYT1.jpg" class="lightbox"><i class="icon-magnifier right"></i></a>
+                  <a href="assets/img/portfolio/TYT1.jpg" class="lightbox"></a>
                 </div>
               </div>
               <div class="content">
@@ -382,7 +432,7 @@
               <div class="overlay">
                 <div class="icon">
                    <!--<a href="single-project.html"><i class="icon-pointer left"></i></a>-->
-                  <a href="assets/img/portfolio/TYT2.jpg" class="lightbox"><i class="icon-magnifier right"></i></a>
+                  <a href="assets/img/portfolio/TYT2.jpg" class="lightbox"></a>
                 </div>
               </div>
               <div class="content">
@@ -398,7 +448,7 @@
               <div class="overlay">
                 <div class="icon">
                   <!--<a href="single-project.html"><i class="icon-pointer left"></i></a>-->
-                  <a href="assets/img/portfolio/TYT3.jpg" class="lightbox"><i class="icon-magnifier right"></i></a>
+                  <a href="assets/img/portfolio/TYT3.jpg" class="lightbox"></a>
                 </div>
               </div>
               <div class="content">
@@ -413,7 +463,7 @@
               <div class="overlay">
                 <div class="icon">
                     <!--<a href="single-project.html"><i class="icon-pointer left"></i></a>-->
-                    <a href="assets/img/portfolio/TYT4.jpg" class="lightbox"><i class="icon-magnifier right"></i></a>
+                    <a href="assets/img/portfolio/TYT4.jpg" class="lightbox"></a>
                 </div>
               </div>
               <div class="content">
@@ -428,7 +478,7 @@
               <div class="overlay">
                 <div class="icon">
                   <!--<a href="single-project.html"><i class="icon-pointer left"></i></a>-->
-                  <a href="assets/img/portfolio/TYT5.jpg" class="lightbox"><i class="icon-magnifier right"></i></a>
+                  <a href="assets/img/portfolio/TYT5.jpg" class="lightbox"></a>
                 </div>
               </div>
               <div class="content">
@@ -443,22 +493,12 @@
               <div class="overlay">
                 <div class="icon">
                   <!--<a href="single-project.html"><i class="icon-pointer left"></i></a>-->
-                  <a href="assets/img/portfolio/TYT6.jpg" class="lightbox"><i class="icon-magnifier right"></i></a>
+                  <a href="assets/img/portfolio/TYT6.jpg" class="lightbox"></a>
                 </div>
               </div>
               <div class="content">
                 <h3><a href="#">การบริการ</a></h3>
                 <p>มั่นใจ ให้ทุกพื้นที่</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Start Banner Section -->
-          <div class="banner">
-            <div class="col-md-12" style="background: url(assets/img/bg/bg1.jpg);">
-              <div class="wrapper text-center">
-                <h1>"ไม่ว่าจะเป็นบริการใดๆ ที่บริษัทฯ จัดมอบให้กับลูกค้า สิ่งหนึ่งที่ลูกค้าแน่ใจได้ คือความเอาใจใส่คุณภาพ"</h1>
-                <p><h3>ผลิตภัณฑ์และบริการของเราทุกขั้นตอนดำเนินงาน</h3></p>
               </div>
             </div>
           </div>
@@ -469,121 +509,18 @@
       <!-- End Portfolio Section -->
 
 
-      <!--&lt;!&ndash; Start Project Section &ndash;&gt;-->
-      <!--<div class="project section">-->
-        <!--<div class="container">-->
-          <!--&lt;!&ndash; Start Heading &ndash;&gt;-->
-          <!--<div class="heading">-->
-            <!--<div class="section-title">Recent <span>Project Updates</span></div>              -->
-          <!--</div>-->
-          <!--&lt;!&ndash; End Heading &ndash;&gt;-->
-          <!---->
-          <!--&lt;!&ndash; Some Text &ndash;&gt;-->
-          <!--<p class="description text-center">-->
-            <!--There are many variations of passages of Lorem Ipsum available, but the majority have suffered altertion in <br> some form, by injected humour, or randomised words which don,t look even slightly believable-->
-          <!--</p>-->
-          <!--<div class="row">-->
-            <!--&lt;!&ndash; Start Recent Projects Carousel &ndash;&gt;-->
-            <!--<div id="projects-carousel" class="touch-carousel">-->
-              <!--<div class="col-md-12">-->
-                <!--<div class="projects-box item">-->
-                  <!--<div class="projects-thumb">-->
-                    <!--<a href="#">-->
-                      <!--<img src="assets/img/news/img1.jpg" alt="">-->
-                    <!--</a>-->
-                  <!--</div>-->
-                  <!--<div class="projects-content">-->
-                    <!--<h4><a href="#">There are many variations</a></h4>-->
-                    <!--<div class="recent-meta">-->
-                      <!--<span class="date"><i class="fa fa-file-text-o"></i> SEPT 12, 2015</span>-->
-                      <!--<span class="comments"><i class="fa fa-comments-o"></i> No Comments</span>-->
-                    <!--</div>-->
-                    <!--<p class="projects-desc">Constructor explains how you can enjoy high end flooring trends like textured wood and realistic stones with new laminate flooring.</p>-->
-                    <!--<a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</div>-->
-              <!--<div class="col-md-12">-->
-                <!--<div class="projects-box item">-->
-                  <!--<div class="projects-thumb">-->
-                    <!--<a href="#">-->
-                      <!--<img src="assets/img/news/img2.jpg" alt="">-->
-                    <!--</a>-->
-                  <!--</div>-->
-                  <!--<div class="projects-content">-->
-                    <!--<h4><a href="#">high end flooring trends</a></h4>-->
-                    <!--<div class="recent-meta">-->
-                      <!--<span class="date"><i class="fa fa-file-text-o"></i> SEPT 12, 2015</span>-->
-                      <!--<span class="comments"><i class="fa fa-comments-o"></i> No Comments</span>-->
-                    <!--</div>-->
-                    <!--<p class="projects-desc">Constructor explains how you can enjoy high end flooring trends like textured wood and realistic stones with new laminate flooring.</p>-->
-                    <!--<a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</div>-->
-               <!--<div class="col-md-12">-->
-                <!--<div class="projects-box item">-->
-                  <!--<div class="projects-thumb">-->
-                    <!--<a href="#">-->
-                      <!--<img src="assets/img/news/img3.jpg" alt="">-->
-                    <!--</a>-->
-                  <!--</div>-->
-                  <!--<div class="projects-content">-->
-                    <!--<h4><a href="#">stones with new laminate flooring</a></h4>-->
-                    <!--<div class="recent-meta">-->
-                      <!--<span class="date"><i class="fa fa-file-text-o"></i> SEPT 12, 2015</span>-->
-                      <!--<span class="comments"><i class="fa fa-comments-o"></i> No Comments</span>-->
-                    <!--</div>-->
-                    <!--<p class="projects-desc">Constructor explains how you can enjoy high end flooring trends like textured wood and realistic stones with new laminate flooring.</p>-->
-                      <!--<a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</div>-->
-              <!--<div class="col-md-12">-->
-                <!--<div class="projects-box item">-->
-                  <!--<div class="projects-thumb">-->
-                    <!--<a href="#">-->
-                      <!--<img src="assets/img/news/img4.jpg" alt="">-->
-                    <!--</a>-->
-                  <!--</div>-->
-                  <!--<div class="projects-content">-->
-                    <!--<h4><a href="#">majority have suffered alteration</a></h4>-->
-                    <!--<div class="recent-meta">-->
-                      <!--<span class="date"><i class="fa fa-file-text-o"></i> SEPT 12, 2015</span>-->
-                      <!--<span class="comments"><i class="fa fa-comments-o"></i> No Comments</span>-->
-                    <!--</div>-->
-                    <!--<p class="projects-desc">Constructor explains how you can enjoy high end flooring trends like textured wood and realistic stones with new laminate flooring.</p>-->
-                    <!--<a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</div>-->
-              <!--<div class="col-md-12">-->
-                <!--<div class="projects-box item">-->
-                  <!--<div class="projects-thumb">-->
-                    <!--<a href="#">-->
-                      <!--<img src="assets/img/news/img5.jpg" alt="">-->
-                    <!--</a>-->
-                  <!--</div>-->
-                  <!--<div class="projects-content">-->
-                    <!--<h4><a href="#">Finding New Buildings</a></h4>-->
-                    <!--<div class="recent-meta">-->
-                      <!--<span class="date"><i class="fa fa-file-text-o"></i> SEPT 12, 2015</span>-->
-                      <!--<span class="comments"><i class="fa fa-comments-o"></i> No Comments</span>-->
-                    <!--</div>-->
-                    <!--<p class="projects-desc">Constructor explains how you can enjoy high end flooring trends like textured wood and realistic stones with new laminate flooring.</p>-->
-                    <!--<a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-            <!--&lt;!&ndash; End Recent Projects Carousel &ndash;&gt;-->
-          <!--</div>          -->
-        <!--</div>-->
-        <!--&lt;!&ndash; .container &ndash;&gt;-->
-      <!--</div>-->
-      <!--&lt;!&ndash; End Project Section  &ndash;&gt;-->
+      <!-- Start Banner Section -->
+      <div class="banner">
+        <div class="col-md-12" style="background: url(assets/img/bg/bg1.jpg);">
+          <div class="wrapper text-center">
+            <h1>"ไม่ว่าจะเป็นบริการใดๆ ที่บริษัทฯ จัดมอบให้กับลูกค้า สิ่งหนึ่งที่ลูกค้าแน่ใจได้ คือความเอาใจใส่คุณภาพ"</h1>
+            <p><h3>ผลิตภัณฑ์และบริการของเราทุกขั้นตอนดำเนินงาน</h3></p>
+          </div>
+        </div>
+      </div>
 
 
+      <!--Start Youtube -->
       <section id="youtubes">
         <div class="container">
           <div class="row">
@@ -598,53 +535,53 @@
           </div>
         </div>
       </section>
-      <!-- End Banner Section -->
+      <!-- End Youtube Section -->
+
+
+
       <!--Start Profile PDF-->
       <section id="profile" class="section">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
+          <div class="col-sm-12 text-center">
+            <div class="heading">
+              <div class="section-title">โบร<span>ชัวร์</span></div>
+            </div><br>
+          </div>
+          <div class="row col-sm-offset-1 col-sm-12">
+            <div class="col-sm-5">
               <div class="featured-thumb">
-                <img src="assets/img/about/img1.png" alt="">
+                <div class="directorySliderLeft"></div>
               </div>
             </div>
+            <div class="col-sm-5">
+              <div class="featured-thumb">
+                <div class="directorySliderRight" ></div>
+                <!--<img src="assets/img/about/img1.png" alt="">-->
+              </div>
+            </div>
+          </div>
+          <div align="center">
+            <a href="assets/pdf/profile.pdf" target="_blank"><span ><img class="kobHover" src="assets\img\download.png"  style="margin-top: 20px;width: 200px;height: 50px"></span></a>
           </div>
         </div>
       </section>
       <!--End Profile PDF-->
-      <a href="assets/pdf/profile.pdf" target="_blank">----------------------------</a>
+      <!-- Start Boxed Section -->
+      <div class="boxed">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-8">
+              <h3>“เราจะมุ่งมั่นการบริการที่มีคุณภาพ ด้วยการบริการระดับสากล”
+              </h3>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <a href="about.html" class="btn btn-border">Get A quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Boxed Section -->
 
-      <!--&lt;!&ndash; Testimonial Section Start &ndash;&gt;-->
-      <!--<section id="testimonial" class="section">-->
-        <!--<div class="container">-->
-          <!--<div class="row">-->
-            <!--<div id="testimonial-carousel" class="owl-carousel owl-theme">-->
-              <!--<div class="item active text-center">-->
-                <!--<img class="img-member" src="assets/img/testimonial/img1.jpg" alt="">-->
-                <!--<div class="client-info">-->
-                  <!--<h2 class="client-name">ชื่อ สกุล<span>(ตำแหน่ง)</span></h2>-->
-                <!--</div>-->
-                <!--<p><i class="fa fa-quote-left quote-left"></i>สุนทรพจน์ <i class="fa fa-quote-right quote-right"></i><br> ............. <br> ............ </p>-->
-              <!--</div>-->
-              <!--<div class="item text-center">-->
-                <!--<img class="img-member" src="assets/img/testimonial/img2.jpg" alt="">-->
-                <!--<div class="client-info">-->
-                 <!--<h2 class="client-name">ชื่อ สกุล<span>(ตำแหน่ง)</span></h2>-->
-                <!--</div>-->
-                <!--<p><i class="fa fa-quote-left quote-left"></i>สุนทรพจน์<i class="fa fa-quote-right quote-right"></i><br> ................<br> ............ </p>-->
-              <!--</div>-->
-              <!--<div class="item text-center">-->
-                <!--<img class="img-member" src="assets/img/testimonial/img3.jpg" alt="">-->
-                <!--<div class="client-info">-->
-                  <!--<h2 class="client-name">ชื่อ สกุล<span>(ตำแหน่ง)</span></h2>-->
-                <!--</div>-->
-                <!--<p><i class="fa fa-quote-left quote-left"></i>................ <i class="fa fa-quote-right quote-right"></i><br>.................... <br> ................ </p>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</section>-->
-      <!--&lt;!&ndash; Testimonial Section End &ndash;&gt;-->
 
       <!-- Start Footer Section -->
       <footer>
@@ -675,54 +612,12 @@
                 <p>
                   ผู้ที่สนใจร่วมงานกับเรา สามารถติดต่อเราได้โดยคลิ๊กปุ่ม "สมัครงาน" ด่านล่างนี้
                 </p>
-                <div class="compayt-button">
-                  <a href="applicationform.html" class="btn btn-effect" style="margin-top: 20px;">สมัครงาน <i class="icon-user"></i></a>
+                <div class="compayt-button ">
+                  <a href="applicationform.html" class="btn btn-effect kobHover" style="margin-top: 20px;">สมัครงาน <i class="icon-user"></i></a>
                 </div>
               </div>
             </div>
             <!-- End Contact Widget -->
-
-            <!--&lt;!&ndash; Start latest Work Posts Widget &ndash;&gt;-->
-            <!--<div class="col-md-3 col-sm-6 col-xs-12">-->
-              <!--<div class="footer-widget flickr-widget">-->
-                <!--<h4>-->
-                  <!--รับสมัครงาน-->
-                <!--</h4>-->
-                <!--<ul class="flickr-list">-->
-                  <!--<li>-->
-                    <!--<a href="assets/img/work/img-1.jpg" class="lightbox">-->
-                      <!--<img alt="" src="assets/img/work/img-1.jpg">-->
-                    <!--</a>-->
-                  <!--</li>-->
-                  <!--<li>-->
-                    <!--<a href="assets/img/work/img-2.jpg" class="lightbox">-->
-                      <!--<img alt="" src="assets/img/work/img-2.jpg">-->
-                    <!--</a>-->
-                  <!--</li>-->
-                  <!--<li>-->
-                    <!--<a href="assets/img/work/img-3.jpg" class="lightbox">-->
-                      <!--<img alt="" src="assets/img/work/img-3.jpg">-->
-                    <!--</a>-->
-                  <!--</li>-->
-                  <!--<li>-->
-                    <!--<a href="assets/img/work/img-4.jpg" class="lightbox">-->
-                      <!--<img alt="" src="assets/img/work/img-4.jpg">-->
-                    <!--</a>-->
-                  <!--</li>-->
-                  <!--<li>-->
-                    <!--<a href="assets/img/work/img-5.jpg" class="lightbox">-->
-                      <!--<img alt="" src="assets/img/work/img-5.jpg">-->
-                    <!--</a>-->
-                  <!--</li>-->
-                  <!--<li>-->
-                    <!--<a href="assets/img/work/img-6.jpg" class="lightbox">-->
-                      <!--<img alt="" src="assets/img/work/img-6.jpg">-->
-                    <!--</a>-->
-                  <!--</li>-->
-                <!--</ul>-->
-              <!--</div>-->
-            <!--</div>-->
-            <!--&lt;!&ndash; End latest Work  Widget &ndash;&gt;-->
 
             <!-- Start Address Widget -->
             <div class="col-md-3 col-sm-6 col-xs-12">
@@ -739,12 +634,6 @@
                   </li>
                   <li>
                     <a href="#"><i class="fa fa-mobile"></i> (+66) 087-022-9222</a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-comments-o"></i> (Line) @tp.clening</a>
-                  </li>
-                  <li>
-                    <a href="https://www.facebook.com/teepoppgroup/" target="_blank"><i class="fa fa-facebook-square"></i> facebook.com/teepoppgroup</a>
                   </li>
                   <li>
                     <a href="#"><i class="fa fa-fax"></i> FAX: 02-987-2129</a>
@@ -766,9 +655,18 @@
                 </h4>
                 <div class="contact-info">
                   <!--<p>เราพร้อมที่จะช่วยคุณตลอด 24 ชั่วโมงต่อวันเจ็ดวันต่อสัปดาห์</p>-->
-                  <ul class="hours">
+                  <ul class="hours address">
                     <li>จันทร์-เสาร์: <span>8.30 น. -  17.30 น.</span></li>
                     <li>อาทิตย์: <span> หยุด </span></li>
+                    <br>
+
+                    <h6 style="color: white">โซเชียล</h6>
+                    <li >
+                      <a href="#" ><i class="fa fa-comments-o" style="margin-top: -10px;" ></i> (Line) @tp.clening</a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/teepoppgroup/" target="_blank"><i class="fa fa-facebook-square"></i> facebook.com/teepoppgroup</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -814,7 +712,7 @@
 
     <!-- Main JS  -->
 
-    <script type="text/javascript" src="assets/js/jquery-min.js"></script>
+    <!--<script type="text/javascript" src="assets/js/jquery-min.js"></script>-->
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="assets/js/modernizrr.js"></script>

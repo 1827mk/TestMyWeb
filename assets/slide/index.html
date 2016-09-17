@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>devKOB Test Slide</title>
+	<!-- jQuery library (served from Google) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- directorySlider Javascript file -->
+<script src="js/directorySlider.js"></script>
+</head>
+<body>
+
+<div class="directorySlider"></div>
+
+<script type="text/javascript" language="javascript">
+
+$(document).ready(function(){
+	$('.directorySlider').directorySlider({
+	animation: 'fade',
+	directory: 'img/',
+	extension: 'jpg',
+	numslides: 4,
+	speed: 3000
+	});
+});
+</script>
+
+</body>
+</html>
